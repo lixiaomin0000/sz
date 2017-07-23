@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../scss/xq.css"/>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div><a href="account_news.html"><img src="../img/left.png"/></a></div>
+				<div id="list">消费详情<img src="../img/recharge2.png" class="img"/></div>
+				<div></div>
+			</header>
+				<div class="posi">
+					<div class="tion">
+						<p class="qb">
+							<span><a href="">全部</a></span>
+						</p>
+						<hr />
+						<div class="yy">
+							应用
+						</div>
+						<div class="yy_list">
+							<p class="xxl">
+								<a href="javascript:;">天天消消乐</a>
+							</p>
+							<p class="xy">
+								<a href="javascript:;">大话西游</a>
+							</p>
+							<p class="wzry">
+								<a href="javascript:;">王者荣耀</a>
+							</p>
+						</div>
+					</div>
+				</div>
+		<div class="posion">
+			<nav>
+				<span>2016年7月15日</span>
+				<span>总消费1528条</span>
+			</nav>
+			<ul class="lis">
+				<li class="li_1">
+					<div><span>闪</span></div>
+					<div>
+						<p><span class="or">天天消消乐</span>&nbsp;<span>闪注量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+				<li class="li_2">
+					<div><span>短</span></div>
+					<div>
+						<p><span class="bl">大话西游</span>&nbsp;<span>段信量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+				<li class="li_2">
+					<div><span>短</span></div>
+					<div>
+						<p><span class="or">天天消消乐</span>&nbsp;<span>段信量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+				<li class="li_1">
+					<div><span>闪</span></div>
+					<div>
+						<p><span class="pu">王者荣耀</span>&nbsp;<span>闪注量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+			</ul>
+			<nav>
+				<span>2016年7月14</span>
+			</nav>
+			<ul class="lis">
+				<li class="li_2">
+					<div><span>短</span></div>
+					<div>
+						<p><span class="bl">大话西游</span>&nbsp;<span>段信量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+				<li class="li_1">
+					<div><span>闪</span></div>
+					<div>
+						<p><span class="pu">王者荣耀</span>&nbsp;<span>闪注量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li> 
+				<li class="li_2">
+					<div><span>短</span></div>
+					<div>
+						<p><span class="or">天天消消乐</span>&nbsp;<span>段信量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+				<li class="li_1">
+					<div><span>闪</span></div>
+					<div>
+						<p><span class="or">天天消消乐</span>&nbsp;<span>闪注量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+			</ul>   
+			<nav>
+				<span>2016年7月14</span>
+			</nav>
+			<ul class="lis">
+				<li class="li_2">
+					<div><span>短</span></div>
+					<div>
+						<p><span class="or">天天消消乐</span>&nbsp;<span>段信量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+				
+				<li class="li_1">
+					<div><span>闪</span></div>
+					<div>
+						<p><span class="pu">王者荣耀</span>&nbsp;<span>闪注量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li> 
+				<li class="li_2">
+					<div><span>短</span></div>
+					<div>
+						<p><span class="bl">大话西游</span>&nbsp;<span>段信量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+				<li class="li_1">
+					<div><span>闪</span></div>
+					<div>
+						<p><span class="or">天天消消乐</span>&nbsp;<span>闪注量消费</span></p>
+						<p>2016/7/16 14:24</p>
+					</div>
+					<div>-1条</div>
+				</li>
+			</ul> 
+		</div>
+			
+		</div>
+	</body>
+	<script src="../js/rem.js"></script>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script>
+	var index=1; 
+
+		
+
+		$("#list").click(function(){
+			index++;
+          if(index%2==0){
+          	console.log(index)
+          	$('.posi').css({"display":"block"});
+			$('.posi').animate({"height":"100%"});
+			$('.tion').animate({"height":"16rem"});
+          }else{
+          	$('.posi').css({"display":"none"});
+			$('.posi').animate({"height":"0rem"});
+          }
+		});
+		$(".xxl").click(function(){
+			index++;
+          	$('.posi').css({"display":"none"});
+			$(".lis li").hide();
+		$(".lis li").find($(".or")).parent().parent().parent().show();
+		});
+		$(".xy").click(function(){
+			index++;
+          	$('.posi').css({"display":"none"});
+			$(".lis li").hide();
+		$(".lis li").find($(".bl")).parent().parent().parent().show();
+		});
+		$(".wzry").click(function(){
+			index++;
+          	$('.posi').css({"display":"none"});
+			$(".lis li").hide();
+		$(".lis li").find($(".pu")).parent().parent().parent().show();
+		});
+	</script>
+</html>

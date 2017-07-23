@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>material</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../scss/base.css">
+    <link rel="stylesheet" href="../font/font-awesome.min.css">
+    <link rel="stylesheet" href="../scss/material.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/rembuju.js"></script>
+    <script src="../js/material.js"></script>
+</head>
+<body class="material_body">
+    <header class="material_header">
+        <a href="system.html"></a>
+        <p>个人资料</p>
+    </header>
+
+
+    <div class="material_user">
+        <div class="material_userL">
+            <a href="javascript:;" id="show1"><div class="material_userLl"><img src="../img/Touxiang.jpg" alt=""></div></a>
+            <div class="material_userLr">
+                <p>UserName</p>
+                <p><span><i class="fa fa-user"></i>个人用户</span></p>
+            </div>
+        </div>
+        <div class="material_userR">
+            <span>未认证</span>
+        </div>
+    </div>
+
+
+    <ul class="material_UserCont">
+        <li class="material_tishi">完善个人资料可享受更多闪注优惠</li>
+        <li>Email <a href="javascript:;"><span>未添加邮箱 </span></a></li>
+        <li>联系人 <a href="javascript:;"><span class="onT">Linda </span></a></li>
+        <li>手机号码 <a href="javascript:;"><span class="onT">11012011911 </span></a></li>
+        <li>身份证正面 <a href="javascript:;" id='show2'><span>未上传身份证信息 </span></a></li>
+        <li>身份证背面 <a href="javascript:;" id='show3'><span>未上传身份证信息 </span></a></li>
+    </ul>
+
+
+    <div class="material_T">
+        <input type="button" value="提交审核">
+    </div>
+
+
+    <!--选择照片-->
+    <div class="material_photo" id="material_photo">
+        <img id="material_photoP" src="../img/Touxiang.jpg" alt="">
+            <ul id="material_Xphoto">
+                <li>拍照</li>
+                <li>从相册中选择</li>
+                <li>取消</li>
+            </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../scss/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../scss/amend.css"/>
+		<link rel="stylesheet" type="text/css" href="../scss/amend1.css"/>
+		<script src="../js/zepto_1.1.3.js"></script>
+		<script src="../js/rem.js"></script>
+		<script src="../js/amend.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<a href="#" onClick="javascript :history.back(-1)"><img src="../img/login-3.png"/></a>
+			<p>手机验证</p>
+			<p></p>
+		</header>
+		<content>
+			<div class="top">短信验证已发送到手机号为：
+				<h3>186****1524</h3>
+			</div>
+			<div class="verify">
+				<img src="../img/login-2.png"/>
+				<input type="text" placeholder="通过原登录密码验证"/>
+				<div class="code">
+					发送验证码
+				</div>
+			</div>
+			<div class="confirm">
+				<a href="#">确定</a>
+			</div>
+		</content>
+		
+	</body>
+	<script>
+		var i = 0;
+		$(".img").on('click',function(){
+			
+			if (i==1) {
+				$("input").attr('type','password');
+				$(this).attr('src','../img/login-5.png')
+				i = 0;
+			} else{
+				$(this).attr('src','../img/login-1.png')
+				$("input").attr('type','text');
+				i = 1;
+			}
+		})
+		$(".confirm").on('click',function(){
+			if ($("input").val().length <= 4) {
+				alert("请输入验证码")
+			} else{
+				$(".confirm a").attr("href","amend2.html")
+			}
+		})
+		;
+		var s =6;
+		
+		$(".code").on('click',function(){
+			$('.code').unbind("click");
+			$('.code').css('background','#999');
+			fun();
+			
+		})
+		function fun(){
+			clearInterval(timer);
+			$('.code').html("在6秒内发送");
+			var timer =setInterval(function(){
+				s--;
+				$('.code').html("在"+s+"秒内发送")
+				if (s<=-1) {
+					$('.code').css('background','#fa5a2a')
+					clearInterval(timer);
+					$('.code').html("重新发送验证");
+					$(".code").on('click',function(){
+						$('.code').unbind("click");
+						$('.code').css('background','#ccc');
+						fun();
+					})
+				}
+			},1000)
+			s = 6;
+		}
+		
+	</script>
+</html>

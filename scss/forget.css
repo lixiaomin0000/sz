@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0.2rem; }
+
+a {
+  text-decoration: none; }
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: ''; }
+
+.header {
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.5rem; }
+  .header a {
+    float: left;
+    margin-left: 0.2rem;
+    color: #3A3A39;
+    font-size: 0.3rem; }
+  .header div {
+    width: 100%;
+    text-align: center;
+    font-size: 0.3rem; }
+
+p {
+  font-size: 0.3rem;
+  color: #303030;
+  text-indent: 0.3rem; }
+
+.bd {
+  margin-top: 0.8rem; }
+  .bd div {
+    width: 5.8rem;
+    height: 0.9rem;
+    border-bottom: 1px solid #FFD974;
+    margin: 0 auto;
+    line-height: 0.9rem;
+    display: flex;
+    align-items: center; }
+    .bd div span {
+      display: block;
+      font-size: 0.4rem;
+      color: #FFD974;
+      width: 10%;
+      height: 0.9rem;
+      line-height: 0.9rem; }
+    .bd div input {
+      width: 90%;
+      height: 0.9rem;
+      outline: none;
+      border: none;
+      font-size: 0.4rem; }
+    .bd div img {
+      margin-right: 0.2rem; }
+    .bd div .djs {
+      width: 0.4rem;
+      text-align: center;
+      height: 0.4rem;
+      line-height: 0.5rem;
+      border: 2px solid red;
+      border-radius: 50%;
+      font-size: 0.12rem;
+      color: red; }
+    .bd div input::placeholder {
+      color: #BFBDC2; }
+  .bd .btn, .bd .yzmbtn, .bd .czbtn {
+    display: flex;
+    justify-content: flex-start;
+    width: 6rem;
+    height: 0.9rem;
+    border: none;
+    margin-top: 0.6rem; }
+    .bd .btn div, .bd .yzmbtn div, .bd .czbtn div {
+      width: 0.9rem;
+      height: 0.9rem;
+      background: #FFD974;
+      z-index: 2; }
+    .bd .btn div:nth-of-type(1), .bd .yzmbtn div:nth-of-type(1), .bd .czbtn div:nth-of-type(1) {
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%; }
+    .bd .btn div:nth-of-type(2), .bd .yzmbtn div:nth-of-type(2), .bd .czbtn div:nth-of-type(2) {
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%; }
+    .bd .btn a, .bd .yzmbtn a, .bd .czbtn a {
+      display: block;
+      margin-left: -0.45rem;
+      text-align: center;
+      line-height: 0.9rem;
+      width: 4.2rem;
+      background: #FFD974;
+      color: #FDF8E8;
+      font-size: 0.3rem;
+      margin: 0.6rem auto;
+      z-index: 1; }
+
+.footer {
+  width: 100%;
+  height: 6rem; }
+
+.body {
+  width: 100%;
+  height: 100%; }
+
+.show, .show1 {
+  display: none;
+  width: 4.5rem;
+  height: 2.46rem;
+  background: white;
+  border-radius: 7%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.25rem;
+  margin-top: -1.23rem;
+  z-index: 3;
+  text-align: center; }
+  .show p:nth-of-type(1), .show1 p:nth-of-type(1) {
+    margin-top: 0.3rem;
+    font-size: 0.3rem;
+    color: #303030; }
+  .show p:nth-of-type(2), .show1 p:nth-of-type(2) {
+    margin-top: 0.1rem;
+    font-size: 0.3rem;
+    color: #696969; }
+  .show div, .show1 div {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .show div input, .show1 div input {
+      width: 49.2%;
+      height: 0.66rem;
+      background: #FFD974;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 0.25rem; }
+    .show div input:nth-of-type(1), .show1 div input:nth-of-type(1) {
+      border-bottom-left-radius: 10%; }
+    .show div input:nth-of-type(2), .show1 div input:nth-of-type(2) {
+      border-bottom-right-radius: 10%; }
+    .show div a, .show1 div a {
+      display: block;
+      width: 100%;
+      height: 0.66rem;
+      line-height: 0.66rem;
+      background: #FFD974;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 0.3rem; }
+    .show div .qx1, .show1 div .qx1 {
+      width: 100%;
+      height: 0.66rem;
+      background: #FFD974;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 0.25rem; }
+
+.yzm, .yzm1, .cz, .cz1 {
+  display: none; }
+
+/*# sourceMappingURL=forget.css.map */

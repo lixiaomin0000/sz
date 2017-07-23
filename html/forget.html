@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../scss/forget.css">
+  <link rel="stylesheet" href="../rem/app.css">
+  <link rel="stylesheet" href="../demo-files/demo.css">
+  <script src="../rem/app.js" charset="utf-8"></script>
+  <script src="../js/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <script src="../js/forget.js" charset="utf-8"></script>
+  <title>忘记密码</title>
+</head>
+<body class="body">
+  <div class="show">
+    <p>确认手机号码</p>
+    <p>我们将发送验证码到：</p>
+    <p class="numb1"></p>
+    <div>
+      <input class="qx" type="button" value="取消">
+      <input class="qd" type="button" value="确定">
+    </div>
+  </div>
+  <div class="show1">
+    <p>重置密码成功，请重新登录</p>
+    <div>
+      <a href="login.html">确定</a>
+    </div>
+  </div>
+  <div class="header clearfix">
+    <a href="#"  onClick="javascript :history.back(-1)">
+      &lt;
+    </a>
+    <div>忘记密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+  </div>
+  <p class="sjh">请输入您绑定的手机号</p>
+  <div class="sjh1">
+    <form class="bd" method="post">
+      <div>
+        <span class="icon icon-mobile2"></span>
+        <input class="numb" type="text" placeholder="手机号码">
+        <img class="clearnum" src="../img/err.png" alt="">
+      </div>
+      <div class="btn">
+        <div></div>
+        <a href="###">下一步</a>
+        <div></div>
+      </div>
+    </form>
+  </div>
+
+  <p class="yzm">请输入您的验证码</p>
+  <div class="yzm1">
+    <form class="bd" method="post">
+      <div>
+        <span class="icon icon-envelop"></span>
+        <input id="numb1" type="text" placeholder="验证码">
+        <div class="djs">60s</div>
+      </div>
+      <div class="yzmbtn">
+        <div></div>
+        <a href="###">下一步</a>
+        <div></div>
+      </div>
+    </form>
+  </div>
+
+  <p class="cz">重置您的登录密码</p>
+  <div class="cz1">
+    <form class="bd" method="post">
+      <div>
+        <span class="icon icon-lock"></span>
+        <input id="numb2" type="password" placeholder="请输入6-24位的登录密码">
+        <span style="color:gray" class="icon icon-eye"></span>
+      </div>
+      <div class="czbtn">
+        <div></div>
+        <a href="###">下一步</a>
+        <div></div>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="footer"></div>
+</body>
+</html>

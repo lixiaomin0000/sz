@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-route.min.js"></script>
+	<script src="../js/rem.js"></script>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.zhuHea {
+			width: 100%;
+			background-color:#fa5a2a ;
+		}
+		.zhuHea>div:nth-of-type(1) {
+			width: 90%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.5rem;
+			color: white;
+			
+		}
+		.zhuOne>div:nth-of-type(1) {
+			line-height: 2rem;
+		}
+		.heaHide {
+			opacity: 0;
+		}
+		.zhu_two {
+			width: 100%;
+			margin: 0 auto;
+		}
+		.zhu_two>div {
+			color: white;
+			text-align: center;
+		}
+		.zhu_two>div:nth-of-type(1) {
+			margin-top: 4.8rem;
+			font-size: 1.1rem;
+		}
+		.zhu_two>div:nth-of-type(2) {
+			font-size: 1.2rem;
+			
+		}
+		.zhu_two>div:nth-of-type(2)>span {
+			margin-top: 4.8rem;
+			font-size: 2.2rem;
+		}
+		.zhu_two>div:nth-of-type(3) {
+			font-size: 0.7rem;
+			margin-top: 2rem;
+			padding-bottom: 1.4rem;
+		}
+		.wrapper {
+			background-color: orange;
+		}
+		.orange_color {
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.1rem;
+		}
+		.orange_color>a {
+			line-height: 4rem;
+			color: white;
+		}
+		.liang {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.zhu_date>div {
+			width: 90%;
+			margin: 0 auto;
+			
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		.zhu_date>div>div:nth-of-type(1) {
+			font-size: 1.4rem;
+			margin-top: 1.8rem;
+		}
+		.zhu_date>div>div:nth-of-type(2)>input {
+			cursor: pointer;
+			width:6.3rem ;
+			height: 1.7rem;
+			font-size: 0.9rem;
+			color: orange;
+			background-color: white;
+			border: 1px solid orange;
+			border-radius: 10%;
+			margin-top: 0.9rem;
+		}
+		.zhu_date>div>div:nth-of-type(3) {
+			font-size: 1rem;
+			margin-top: 1rem;
+			color: #717171;
+			padding-bottom: 1.2rem;
+		}
+		.zhu_he {
+			width: 100%; 
+			border-bottom: 2px solid #CCCCCC ;
+		}
+		#inp {
+			border: 1px solid cyan;
+		}
+		.zhu_ji {
+			cursor: pointer;
+		}
+		.Hide {
+			width: 100%;
+			background-color: white;
+			position: absolute;
+			left: 0px;
+			top: 2.2rem;
+		}
+		.Hide>div {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.Hide>div>div:nth-of-type(1)>input {
+			width:9.1rem ;
+			height: 3.4rem;
+			background-color: orange;
+			font-size: 1.3rem;
+			border: none;
+			border-radius: 5%;
+			margin-top: 2.2rem;
+			margin-bottom: 1.6rem;
+		}
+		.div_hr {
+			margin-bottom: 2.3rem;
+		}
+		.div_hr>div:nth-of-type(1) {
+			width: 4.2rem;
+			margin: 0 auto;
+			margin-top:-0.7rem;
+			background-color: white;
+		}
+		
+		.Hide {
+			z-index: 999;
+			display: none;
+		}
+		.Hide>div>div:nth-of-type(2)>input {
+			width:9.1rem ;
+			height: 3.4rem;
+			background-color: #CCCCCC;
+			font-size: 1.3rem;
+			border: none;
+			border-radius: 5%;
+			margin-top: 2.2rem;
+			margin-bottom: 1.6rem;
+		}
+		
+		.Hide>div>div:nth-of-type(3)>input {
+			width:9.1rem ;
+			height: 3.4rem;
+			background-color: #CCCCCC;
+			font-size: 1.3rem;
+			border: none;
+			border-radius: 5%;
+			margin-top: 2.2rem;
+			margin-bottom: 1.6rem;
+		}
+		
+		
+		
+		.Hide>div>div:nth-of-type(5)>input {
+			width:9.1rem ;
+			height: 3.4rem;
+			background-color: #CCCCCC;
+			font-size: 1.3rem;
+			border: none;
+			border-radius: 5%;
+			margin-top: 2.2rem;
+			margin-bottom: 1.6rem;
+		}
+	</style>
+</head>
+<body ng-app="app">
+	<header class="zhuHea">
+		<div class="zhuOne">
+			<div><a href="ge_zhuye.html">&lt;</a></div>
+			<div class="zhu_ji">信息量统计^</div>
+			<div class="heaHide">></div>
+		</div>
+		<div class="Hide">
+			<div>
+				<div>
+					<input type="button" value="全部" class="quan" />
+				</div>
+				<div class="div_hr">
+					<hr />
+					<div>应用场景</div>
+				</div>
+				<div>
+					<input type="button" class="quan" value="APP" />
+					<input type="button" class="quan" value="H5/web" />
+				</div>
+				<div class="div_hr">
+					<hr />
+					<div>注册方式</div>
+				</div>
+				<div>
+					<input type="button" class="quan" value="APP" />
+					<input type="button" class="quan" value="H5/web" />
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="zhu_two">
+			<div>今日注册量</div>
+			<div><span>158</span>(人)</div>
+			<div>App<span>120</span>人&nbsp;&nbsp;H5/web:<span>38</span>人</div>
+		</div>
+	</header>
+	<section class="wrapper">
+		<div class="liang">
+			<div class="orange_color">
+				<a href="#/">今日注册量</a>
+				<a href="#/zhu_tong3">一周注册量</a>
+				<a href="#/zhu_tong4">一月注册量</a>
+			</div>
+		</div>
+	</section>
+	
+	<div ng-view></div>
+	<script>
+		
+		angular.module('app',['ngRoute'])
+					.config(['$routeProvider',function ($routeProvider) {
+					$routeProvider
+					.when('/',{
+						templateUrl:"zhu_tong2.html"
+					})
+					.when('/zhu_tong3',{
+						templateUrl:"zhu_tong3.html"
+					})
+					.when('/zhu_tong4',{
+						templateUrl:"zhu_tong4.html"
+					})
+					}])
+					
+					
+					
+					
+//					$(function () {
+//						$(".zhu_ji").click(function () {
+//							$(".Hide").css({"display":"block"})
+//							
+////							$(".black").animate({"margin-top":"100px"},{duration:1000})
+//						})
+//					})
+					
+					
+					
+					$(function () {
+						$(".zhu_ji").click(function () {
+							$(".Hide").css("display","block")
+							$(".black").css({"backgroundColor":"black","opacity":"0.7"})
+						})
+						$(".quan").click(function () {
+							$(".Hide").css("display","none")
+							$(".black").css({"backgroundColor":"white"})
+						})
+					})
+					
+					
+					
+					
+					
+					
+	</script>
+</body>
+</html>

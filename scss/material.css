@@ -1,0 +1,152 @@
+.material_body {
+  background: #F5F5F5; }
+
+.material_header {
+  height: 4.1rem;
+  line-height: 4.1rem;
+  background-color: #ffac2c;
+  position: relative;
+  color: #ffffff; }
+  .material_header a {
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    background-color: red;
+    background: url("../img/login-3.png") no-repeat 0.75rem 1.5rem;
+    background-size: 0.5626rem 1rem; }
+  .material_header p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1rem; }
+
+.material_user {
+  display: flex;
+  height: 4.2rem;
+  background-color: #ffac2c; }
+  .material_user .material_userL {
+    width: 49.5%;
+    display: inline-block;
+    height: 100%;
+    padding-left: 1.25rem; }
+    .material_user .material_userL .material_userLl {
+      width: 3.25rem;
+      height: 3.25rem;
+      display: inline-block;
+      float: left;
+      border-radius: 50%;
+      border: 2px solid #ffffff; }
+      .material_user .material_userL .material_userLl img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%; }
+    .material_user .material_userL .material_userLr {
+      height: 3.25rem;
+      padding-left: 0.625rem;
+      padding-top: 0.8rem;
+      float: left; }
+      .material_user .material_userL .material_userLr p:first-child {
+        font-size: 0.625rem;
+        color: #ffffff; }
+      .material_user .material_userL .material_userLr p:last-child {
+        margin-top: 0.3rem;
+        font-size: 0.6rem; }
+        .material_user .material_userL .material_userLr p:last-child span {
+          background: #FFC801;
+          color: #ffffff;
+          border-radius: 2px; }
+    .material_user .material_userL:after {
+      display: block;
+      content: '';
+      clear: both; }
+  .material_user .material_userR {
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+    display: inline-block; }
+    .material_user .material_userR span {
+      position: absolute;
+      width: 4.625rem;
+      height: 1.6rem;
+      background: #FBC676;
+      line-height: 1.6rem;
+      text-align: center;
+      border-radius: 5px;
+      right: 11%;
+      bottom: 27.7%;
+      font-size: 0.81rem;
+      color: #F9713A; }
+  .material_user:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.material_UserCont {
+  background: #ffffff; }
+  .material_UserCont .material_tishi {
+    font-size: 0.75rem;
+    height: 2.2rem;
+    color: #898989;
+    background-color: #f5f5f5;
+    line-height: 2.2rem; }
+  .material_UserCont li {
+    font-size: 0.625rem;
+    height: 2.2rem;
+    color: #000000;
+    line-height: 2.2rem;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 1.2rem 0 1.2rem; }
+    .material_UserCont li span {
+      float: right;
+      padding-right: 0.94rem;
+      background: url("../img/login-4.png") no-repeat right center;
+      background-size: 0.4rem 0.72rem; }
+    .material_UserCont li .onT {
+      color: #000000; }
+
+.material_T {
+  height: 4.1rem;
+  line-height: 4.1rem;
+  display: flex;
+  padding: 1rem 0.7rem 1rem 0.7rem; }
+  .material_T input[type='button'] {
+    flex-grow: 1;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #FED555;
+    font-size: 0.81rem;
+    color: #ffffff; }
+
+.material_photo {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.6); }
+  .material_photo img {
+    width: 9.4rem;
+    height: 9.4rem;
+    margin: -4.7rem 0 0 -4.7rem;
+    position: absolute;
+    top: 40%;
+    left: 50%; }
+  .material_photo ul {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .material_photo ul li {
+      font-size: 0.625rem;
+      height: 2.2rem;
+      color: #000000;
+      line-height: 2.2rem;
+      background: #ffffff;
+      border-bottom: 1px solid #eeeeee;
+      text-align: center; }
+      .material_photo ul li:last-child {
+        color: #FEBB54; }
+
+/*# sourceMappingURL=material.css.map */

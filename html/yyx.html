@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../scss/yyx.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div><a href="ge_zhuye.html"><img src="../img/left.png"/></a></div>
+				<div>应用信息</div>
+				<div><a href="xz.html">新增应用</a></div>
+			</header>
+			<div class="list_top top1">
+				<div><img src="../img/a1.png"/></div>
+				<div>
+					<p><span>开心消消乐</span>【签名：消消乐】</p>
+					<p>应用场景：APP、H5/web</p>
+				</div>
+			</div>
+			<div class="xia">
+				<p>应用名称：<span>开心消消乐</span></p>
+				<p>通信秘钥：<span>xxxxxx</span></p>
+				<p>有效时间：<span>开心消消乐</span></p>
+				<p>应用场景：<span>APP、H5/web</span></p>
+				<p>闪注注册量：<span>151</span>(人)<span>短信注册量：89(人)</span></p>
+			</div>
+			<div class="list_top top2">
+				<div><img src="../img/a2.png"/></div>
+				<div>
+					<p><span>大话西游</span>【签名：大话西游】</p>
+					<p>应用场景：APP、H5/web</p>
+				</div>
+			</div>
+			<div class="xia2">
+				<p>应用名称：<span>大话西游</span></p>
+				<p>通信秘钥：<span>xxxxxx</span></p>
+				<p>有效时间：<span>大话西游</span></p>
+				<p>应用场景：<span>APP、H5/web</span></p>
+				<p>闪注注册量：<span>168</span>(人)<span>短信注册量：88(人)</span></p>
+			</div>
+			<div class="list_top top3">
+				<div><img src="../img/a3.png"/></div>
+				<div>
+					<p><span>王者荣耀</span>【签名：王者荣耀】</p>
+					<p>应用场景：APP、H5/web</p>
+				</div>
+			</div>
+			<div class="xia3">
+				<p>应用名称：<span>王者荣耀</span></p>
+				<p>通信秘钥：<span>xxxxxx</span></p>
+				<p>有效时间：<span>王者荣耀</span></p>
+				<p>应用场景：<span>APP、H5/web</span></p>
+				<p>闪注注册量：<span>128</span>(人)<span>短信注册量：66(人)</span></p>
+			</div>
+		</div>
+	</body>
+	<script src="../js/rem.js"></script>
+	<script src="../js/zepto.min.js"></script>
+	<script>
+	     var index=0; 
+		$(".top1").click(function(){
+			index++;
+          if(index%2==1){
+			$('.xia').animate({"height":"13.8rem"})
+          }else{
+			$('.xia').animate({"height":"0rem"})
+          	
+          }
+		})
+		$(".top2").click(function(){
+			index++;
+          if(index%2==1){
+			$('.xia2').animate({"height":"13.8rem"})
+          }else{
+			$('.xia2').animate({"height":"0rem"})
+          	
+          }
+		})
+		$(".top3").click(function(){
+			index++;
+          if(index%2==1){
+			$('.xia3').animate({"height":"13.8rem"})
+          }else{
+			$('.xia3').animate({"height":"0rem"})
+          	
+          }
+		})
+	</script>
+</html>

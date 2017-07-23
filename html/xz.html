@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../scss/xz.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../scss/base.css"/>-->
+		<title></title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div><a href="yyx.html"><img src="../img/left.png"/></a></div>
+				<div>新增应用</div>
+				<div></div>
+			</header>
+			<nav>
+				<img src="../img/banner.png"/>
+			</nav>
+			<section>
+				<div>
+					应用信息
+				</div>
+			</section>
+			<ul class="list">
+				<li>
+					<span>*</span>
+					<span>接口密码</span>
+					<span><a href="#"><img src="../img/login-4.png"/></span></a>
+					<input type="password" class="m" placeholder="SDK或者接口密码"/>
+				</li>
+				<li>
+				    <span>*</span>
+					<span>通信密钥</span>
+					<span><a href="#"><img src="../img/login-4.png"/></span></a>
+					<input type="text" class="m" placeholder="SDK或者接口通信解密密钥"/>
+
+				</li>
+			</ul>
+			<section>
+				<div>
+					APP信息
+				</div>
+			</section>
+			<ul class="list">
+				<li>
+				    <span></span>
+				    <span>名称</span>
+					<span><a href="#"><img src="../img/login-4.png"/></span></a>
+					<input type="text" class="m" placeholder="APP的名称"/>                       
+				</li>
+				<li>
+				    <span></span>
+				    <span>包名</span>
+					<span><a href="#"><img src="../img/login-4.png"/></span></a>
+					<input type="text" class="m" placeholder="APP的真实包"/>                       
+				</li>
+				<li>
+					<span></span>
+					<span>LOGO文件</span>
+					<span><a href="#"><img src="../img/login-4.png"/></span></a>
+					<input type="text" class="m" placeholder="图片类型jpg、png 大小1M"/>                       
+				</li>
+				<li>
+					<span></span>
+					<span>APP截图</span>
+					<span><a href="#"><img src="../img/login-4.png"/></span></a>
+					<input type="text" class="m" placeholder="图片类型jpg、png 大小1M"/>                       
+				</li>
+			</ul>
+			<div class="h5">
+				<div>
+					<span>H5/web信息</span>
+				    <span>用户注册时发送的短信内容（此内容为前缀，后跟校验码）</span>
+				</div>
+			</div>
+			<ul class="list">
+				<li>
+					<span></span>
+					<span>短信内容</span>
+					<span><a href="#"><img src="../img/login-4.png"/></span></a>
+					<input type="text" class="m" placeholder="长度不得超过20个字"/>                       
+				</li>
+			</ul>
+				<input type="button" class="inp1" value="提交" />
+		</div>
+	</body>
+	<script src="../js/rem.js"></script>
+	<script src="../js/zepto.min.js"></script>
+	<script>
+		$(".inp1").click(function(){
+			location.href="yy.html"
+		})
+	</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/jquery-1.7.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/rems.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../scss/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../scss/details_c.css"/>
+		<script src="../js/details-c.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="ding">
+				<a href="#"  onClick="javascript :history.back(-1)"><</a>
+				<span class="zhxx-span">余额转换</span>	
+		</div>
+		<div class="zh">
+			<div class="zh-p">
+				<p>短</p>
+				<p>
+					<span>余额转换</span>
+					<span>—————></span>
+				</p>
+				<p>闪</p>
+			</div>
+			<p>您仅可以将短信量转换为闪注量</p>
+		</div>
+		<div class="ye">
+			<p>当前短信账号余额为：100条</p>
+			<ul>
+				<li>
+					<span>短信量</span>
+					<input type="text" placeholder="你最多可转换短信量100条" id="dx" />
+				</li>
+				<li>
+					<span>闪注量</span>
+					<input type="text" placeholder="0" />
+				</li>
+			</ul>
+			<input type="button" id="ye-btn" value="余额转换" />
+		</div>
+		<div class="zhcg">
+			<div class="kong">
+				<p>余额转换成功!</p>
+				<input type="button" id="qd" value="确定" />
+			</div>
+		</div>
+	</body>
+</html>

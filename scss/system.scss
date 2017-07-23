@@ -1,0 +1,87 @@
+.system_body{
+  background: #F5F5F5;
+}
+.system_header{
+  height: 4.1rem;
+  line-height: 4.1rem;
+  background-color: #ffac2c;
+  margin-bottom: .5rem;
+  position: relative;color: #ffffff;
+  a{
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    background-color: red;
+    background: url("../img/login-3.png") no-repeat 0.75rem 1.5rem;
+    background-size: 0.5626rem 1rem;
+  }
+  p{
+    width: 100%;
+    height: 100%;
+    text-align: center;font-size: 1rem;
+  }
+}
+.system_user{
+  margin-bottom: 1rem;
+  display: flex;
+  height: 3.7rem;
+  background-color: #ffffff;
+  .system_userL{
+    width: 49.5%;display: inline-block;
+    height: 3.7rem;padding-left: 0.44rem;padding-top: 0.72rem;
+    .system_userLl{
+      width: 2.2rem;height: 2.2rem;display: inline-block;float: left;
+      border-radius: 50%;border: 2px solid #ffffff;
+      img{width: 2.2rem;height: 2.2rem;display: block;border-radius: 50%}
+    }
+    .system_userLr{
+      height: 3.25rem;
+      padding-left: 0.625rem;
+      float: left;
+      p:first-child{font-size: 0.75rem;color: #000000}
+      p:last-child{margin-top: 0.3rem;font-size: 0.6rem;
+        span{background: #FFC801;color: #ffffff;border-radius: 2px}
+      }
+    }
+    &:after{display: block;
+      content: '';clear: both}
+  }
+  .system_userR{
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    span{font-size: 0.75rem;
+      position: absolute;right: 1.25rem;top: 50%;
+      padding-right: 0.94rem;color: #FEBA57;margin-top: -0.4rem;
+      background: url("../img/login-4.png") no-repeat right center;
+      background-size: 0.4rem 0.72rem;
+    }
+  }
+  &:after{content: '';display: block;clear: both}
+}
+
+.system_UserCont{
+  margin-bottom: 0.75rem;
+  background: #ffffff;
+  li{
+    font-size: 0.625rem; height: 2.2rem; color: #000000;
+    line-height: 2.2rem;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 1.2rem 0 1.2rem;
+    span{
+      float: right;
+      margin-top: .9rem;
+      width: 0.4rem;height: 0.72rem;
+      background: url("../img/login-4.png") no-repeat center center;
+      background-size: 0.4rem 0.72rem;
+    }
+  }
+}
+.system_Td{
+  width: 100%;background: #ffffff;
+  height: 2.2rem;text-align: center;
+  line-height: 2.2rem;
+  font-size: 0.75rem;
+  a{color: #000000;}
+}

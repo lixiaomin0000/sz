@@ -1,0 +1,108 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  font-size: 0.12rem
+}
+a{
+  text-decoration: none;
+  color: #FCF1E5;
+}
+.header{
+  width: 100%;
+  height: 2.92rem;
+  padding-top: 0.4rem;
+  background: url(../img/bg.png) repeat-x 0 0;
+  text-align: center;
+  a{
+    display: block;
+    text-align: right;
+    font-size: 0.3rem;
+    margin-right: 0.4rem;
+  }
+  img{
+    margin-top: 0.4rem;
+    width: 2.59rem;
+    height: 1.61rem;
+  }
+}
+.content{
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0 3.4rem;
+  text-align: center;
+  .bd{
+    div{
+      width: 5.8rem;
+      height: 0.9rem;
+      border-bottom: 1px solid #cccccc;
+      margin: 0 auto;
+      line-height: 0.9rem;
+      display: flex;
+      align-items: center;
+      span{
+        display: block;
+        font-size: 0.4rem;
+        background: white;
+        width: 20%;
+        height: 0.9rem;
+        line-height: 0.9rem;
+      }
+      input{
+        width: 80%;
+        height: 0.9rem;
+        outline: none;
+        border: none;
+        font-size: 0.4rem;
+      }
+      input::placeholder{
+        color:#BFBDC2;
+      }
+    }
+    .btn{
+      display: flex;
+      justify-content: flex-start;
+      width: 6rem;
+      height: 0.9rem;
+      border: none;
+      margin-top: 0.6rem;
+      div{
+        width: 0.9rem;
+        height: 0.9rem;
+        background: #FFD974;
+        z-index: 2;
+      }
+      div:nth-of-type(1){
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      div:nth-of-type(2){
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+      a{
+        display: block;
+        margin-left: -0.45rem;
+        text-align: center;
+        line-height: 0.9rem;
+        width: 4.2rem;
+        background: #FFD974;
+        color: #FDF8E8;
+        font-size: 0.3rem;
+        margin: 0.6rem auto;
+        z-index: 1;
+      }
+    }
+
+  }
+}
+.footer{
+  width: 100%;
+  height: 0.7rem;
+  text-align: center;
+  line-height: 0.7rem;
+  a{
+    display: block;
+    color: #FFD974;
+    font-size: 0.3rem;
+  }
+}

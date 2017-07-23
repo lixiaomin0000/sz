@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../scss/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../scss/amend.css"/>
+		<script src="../js/zepto_1.1.3.js"></script>
+		<script src="../js/rem.js"></script>
+		<script src="../js/amend.js"></script>
+		<title></title>
+	</head>
+	<body>
+		
+		<header>
+			<a href="#" onClick="javascript :history.back(-1)"><img src="../img/login-3.png"/></a>
+			<p>修改登陆密码</p>
+			<p></p>
+		</header>
+		<content>
+			<p>请输入6-22位密码</p>
+			<div class="verify">
+				<img src="../img/login-2.png" class="img1"/>
+				<input type="text" placeholder="请输入新的登录密码"/>
+				<a href="#">
+					<img src="../img/login-1.png" class="img"/>
+				</a>
+			</div>
+			<div class="confirm">
+				确定
+			</div>
+		</content>
+		<div class="module">
+			<div>
+				登陆密码设置成功
+			</div>
+		</div>
+	</body>
+	<script>
+		var i = 0;
+		$(".img").on('click',function(){
+			
+			if (i==1) {
+				$("input").attr('type','password');
+				$(this).attr('src','../img/login-5.png')
+				i = 0;
+			} else{
+				$(this).attr('src','../img/login-1.png')
+				$("input").attr('type','text');
+				i = 1;
+			}
+		})
+		
+		$("input").on("blur",function(){
+		    if ($("input").val().length <6) {
+		    	$("p").eq(2).css("color",'red');
+		    } else if($("input").val().length >22){
+		    	$("p").eq(2).css("color",'red');
+		    } else{
+		    	$("p").eq(2).css("color",'#b8b8b8');
+		    }
+		})
+		$(".confirm").on("click",function(){
+			if ($("input").val().length<6) {
+				alert("请输入6~22为密码")
+			} else{
+				$(".module").css("display","block")
+			}
+
+		})
+		$(".module").on("click",function(){
+			$(".module").css("display","none")
+		})
+	</script>
+</html>
